@@ -1,0 +1,17 @@
+{
+    "name": "circli/contracts",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andreas Sundqvist",
+            "email": "andreas@oak-valley.se"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Circli\\Contracts\\":  "src/"
+        }
+    }
+}
