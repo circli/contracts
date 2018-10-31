@@ -2,9 +2,8 @@
 
 namespace Circli\Contracts;
 
-interface ModuleInterface
+interface ModuleInterface extends ExtensionInterface
 {
     public function __construct(PathContainer $paths);
     public function configure(): array;
-    public function getRoutes(): array;
 }
