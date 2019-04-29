@@ -2,9 +2,7 @@
 
 namespace Circli\Contracts;
 
-use Circli\EventDispatcher\EventDispatcherInterface;
-
 interface EventProviderInterface
 {
-	public function registerEvents(EventDispatcherInterface $dispatcher): void;
+	public function registerEvents(\Psr\EventDispatcher\EventDispatcherInterface $dispatcher): void;
 }
