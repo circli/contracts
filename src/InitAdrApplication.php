@@ -2,7 +2,9 @@
 
 namespace Circli\Contracts;
 
+use Psr\Container\ContainerInterface;
+
 interface InitAdrApplication
 {
-    public function initAdr(\Polus\Adr\Adr $adr);
+    public function initAdr(\Polus\Adr\Adr $adr, ContainerInterface $container = null);
 }
