@@ -2,9 +2,10 @@
 
 namespace Circli\Contracts;
 
+use Circli\Console\Application;
 use Psr\Container\ContainerInterface;
 
 interface InitCliApplication
 {
-    public function initCli(\Symfony\Component\Console\Application $adr, ContainerInterface $container);
+    public function initCli(Application $application, ContainerInterface $container);
 }

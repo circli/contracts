@@ -1,9 +1,8 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Circli\Contracts;
 
 interface ExtensionInterface
 {
-    public function __construct(PathContainer $paths);
-    public function configure(): array;
+    public function configure(PathContainer $pathContainer = null): array;
 }
