@@ -2,10 +2,10 @@
 
 namespace Circli\Contracts;
 
-use Polus\Router\RouterCollectionInterface;
+use Polus\Router\RouterCollection;
 use Psr\Container\ContainerInterface;
 
 interface InitHttpApplication
 {
-    public function initHttp(RouterCollectionInterface $router, ContainerInterface $container = null);
+    public function initHttp(RouterCollection $router, ContainerInterface $container = null);
 }
