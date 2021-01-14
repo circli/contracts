@@ -7,5 +7,5 @@ interface EventSubscriberInterface
     /**
      * @return array<class-string|string, callable|class-string|array<class-string, string>>
      */
-    public static function getSubscribedEvents(): array;
+    public function getSubscribedEvents(): array;
 }
